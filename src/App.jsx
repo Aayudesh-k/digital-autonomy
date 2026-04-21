@@ -53,7 +53,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* 02. The Ecosystem (Seamless White Background Fixed) */}
+      {/* 02. The Ecosystem (Overlap Bug Fixed) */}
       <section id="ecosystem" className="py-24 px-8 md:px-24 min-h-screen bg-white flex flex-col justify-center">
         <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">02. + Stakeholder Ecosystem</h2>
         
@@ -68,30 +68,33 @@ export default function App() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 relative">
-            {/* Left Column: The Architects */}
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full border-l-4 border-blue-500">
+            
+            {/* Left Column: The Architects (FIXED WITH FLEX-1) */}
+            <div className="flex flex-col gap-6 h-full">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-l-4 border-blue-500 flex-1">
                 <h3 className="font-black uppercase tracking-widest text-slate-900 mb-2">Platform Owners / Tech Co.</h3>
                 <p className="text-slate-600 text-sm">Manage applications, create rules and conditions, create and sell the social media platform itself.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full border-l-4 border-blue-400">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-l-4 border-blue-400 flex-1">
                 <h3 className="font-black uppercase tracking-widest text-slate-900 mb-2">Developers / Engineers</h3>
                 <p className="text-slate-600 text-sm">Create and design the application according to the owners' vision.</p>
               </div>
             </div>
 
             {/* Center Column: The Core (Users) */}
-            <div className="space-y-6 bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full border-t-4 border-rose-500">
-              <div className="text-center mb-4">
-                <span className="text-xs font-black uppercase tracking-widest text-rose-500 bg-rose-50 border border-rose-100 px-3 py-1 rounded-full">The Data Generators</span>
-              </div>
-              
+            <div className="space-y-6 bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full border-t-4 border-rose-500 flex flex-col justify-between">
               <div>
-                <h3 className="font-black text-slate-900 mb-1">Users (General Base)</h3>
-                <p className="text-slate-600 text-sm mb-4">Use as a pastime, provide personal data for entertainment. Personal opinions are grown or reinforced at a moderate level; already possess developed societal views.</p>
+                <div className="text-center mb-4">
+                  <span className="text-xs font-black uppercase tracking-widest text-rose-500 bg-rose-50 border border-rose-100 px-3 py-1 rounded-full">The Data Generators</span>
+                </div>
+                
+                <div>
+                  <h3 className="font-black text-slate-900 mb-1">Users (General Base)</h3>
+                  <p className="text-slate-600 text-sm mb-4">Use as a pastime, provide personal data for entertainment. Personal opinions are grown or reinforced at a moderate level; already possess developed societal views.</p>
+                </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-100">
+              <div className="pt-4 border-t border-slate-100 mt-auto">
                 <h3 className="font-black text-rose-600 mb-1">Vulnerable Populations</h3>
                 <p className="text-slate-700 text-sm italic mb-2">Most at risk. Include youth, elderly, and minority groups.</p>
                 <ul className="text-sm text-slate-600 space-y-1 list-disc pl-4">
@@ -104,17 +107,18 @@ export default function App() {
               </div>
             </div>
 
-            {/* Right Column: The Monetizers */}
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full border-r-4 border-emerald-500">
+            {/* Right Column: The Monetizers (FIXED WITH FLEX-1) */}
+            <div className="flex flex-col gap-6 h-full">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-r-4 border-emerald-500 flex-1">
                 <h3 className="font-black uppercase tracking-widest text-slate-900 mb-2">Advertisers</h3>
                 <p className="text-slate-600 text-sm">Buy information to provide tailored ads and experiences to individual users.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full border-r-4 border-emerald-400">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-r-4 border-emerald-400 flex-1">
                 <h3 className="font-black uppercase tracking-widest text-slate-900 mb-2">Data Brokers</h3>
                 <p className="text-slate-600 text-sm">Buy and sell personal data to interested parties to enhance user experience; can influence user opinions and future regulations on the industry.</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
