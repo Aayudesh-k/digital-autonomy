@@ -21,7 +21,7 @@ export default function App() {
         ></div>
         
         <div className="relative z-10 text-stone-50">
-          <h2 className="text-emerald-400 font-bold tracking-widest mb-4">EGS 4034 • TEAM 31</h2>
+          <h2 className="text-emerald-400 font-bold tracking-widest mb-4">EGS 4034 • TEAM 11</h2>
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-6 uppercase leading-tight drop-shadow-lg">
             Digital <br /> Footprints & <br /> <span className="text-emerald-400">Privacy.</span>
           </h1>
@@ -43,10 +43,26 @@ export default function App() {
             </div>
             <div>
               <h3 className="text-3xl font-bold mb-4 text-slate-900">The Stakeholder Ecosystem</h3>
-              <ul className="space-y-4">
-                <li className="flex items-center"><span className="w-2 h-2 bg-emerald-500 rounded-full mr-4"></span><strong>Users:</strong> Trade privacy for social connection and convenience.</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-emerald-500 rounded-full mr-4"></span><strong>App Developers:</strong> Must balance fiduciary duties to maximize profit via data with ethical duties to users.</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-emerald-500 rounded-full mr-4"></span><strong>Advertisers:</strong> Capitalize on user data to sell products, driving the financial incentives of platforms.</li>
+              {/* FIXED BULLET POINTS ALIGNMENT */}
+              <ul className="space-y-6">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full mr-4 mt-2 shrink-0"></span>
+                  <div>
+                    <strong className="text-slate-900">Users:</strong> Trade privacy for social connection and convenience.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full mr-4 mt-2 shrink-0"></span>
+                  <div>
+                    <strong className="text-slate-900">App Developers:</strong> Must balance fiduciary duties to maximize profit via data with ethical duties to users.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full mr-4 mt-2 shrink-0"></span>
+                  <div>
+                    <strong className="text-slate-900">Advertisers:</strong> Capitalize on user data to sell products, driving the financial incentives of platforms.
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -161,7 +177,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-slate-950 text-slate-400 py-12 px-8 md:px-24 flex flex-col md:flex-row justify-between items-center text-sm font-bold tracking-widest gap-4">
-        <div>EGS 4034 • ENGINEERING ETHICS • TEAM 31</div>
+        <div>EGS 4034 • ENGINEERING ETHICS • TEAM 11</div>
         <div>AAYUDESH • BRAYDEN • ALEX • JIJUN</div>
       </footer>
     </div>
