@@ -34,7 +34,7 @@ export default function App() {
 
       {/* 01. The Threat (Problem Context) */}
       <section id="threat" className="py-24 px-8 md:px-24 min-h-screen flex flex-col justify-center bg-white">
-        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">01. + The Problem</h2>
+        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">01. The Problem</h2>
         
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 text-lg leading-relaxed text-slate-600">
@@ -55,7 +55,7 @@ export default function App() {
 
       {/* 02. The Ecosystem (Overlap Bug Fixed) */}
       <section id="ecosystem" className="py-24 px-8 md:px-24 min-h-screen bg-white flex flex-col justify-center">
-        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">02. + Stakeholder Ecosystem</h2>
+        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">02. Stakeholder Ecosystem</h2>
         
         <div className="max-w-6xl mx-auto w-full relative">
           
@@ -125,7 +125,7 @@ export default function App() {
 
       {/* 03. The Frameworks */}
       <section id="frameworks" className="py-24 px-8 md:px-24 min-h-screen bg-white flex flex-col justify-center">
-        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">03. + Evaluating Frameworks</h2>
+        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-slate-800 pb-4 uppercase text-slate-900">03. Evaluating Frameworks</h2>
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Duty-Based Card */}
@@ -186,7 +186,7 @@ export default function App() {
 
       {/* 04. The Solution */}
       <section id="solution" className="py-24 px-8 md:px-24 min-h-screen bg-slate-900 text-stone-50 flex flex-col justify-center">
-        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-emerald-500 pb-4 uppercase">04. + The Solution</h2>
+        <h2 className="text-5xl font-black tracking-tighter mb-12 border-b-4 border-emerald-500 pb-4 uppercase">04. The Solution</h2>
         
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-7 space-y-10">
